@@ -1,0 +1,15 @@
+cd Desktop
+md gittest
+cd gittest
+git init
+New-Item index.html -type file
+New-Item styles.css -type file
+New-Item aboutMe.txt -type file
+git add .
+git commit -m 'updated aboutMe'
+git add .
+git commit -m 'added favorite movie to aboutMe'
+git log
+git revert -n HEAD
+git add .
+git commit -m 'added favorite book'
