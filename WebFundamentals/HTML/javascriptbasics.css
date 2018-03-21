@@ -1,0 +1,68 @@
+body {
+    background: navy;
+    color: grey;
+}
+
+#header {
+    background: red;
+    border-radius: 8px;
+    padding: 1px;
+}
+
+/* h1 {
+    color: grey;
+} */
+
+#nav {
+    background: lightblue;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+#nav a {
+    color: grey;
+}
+
+
+#nav ul {
+    margin-top: 0px;
+}
+
+#main {
+    display: inline-block;
+    background: black;
+    /* width: 81.19%; */
+    width: 1082px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 3px; 
+    vertical-align: top;
+    border-radius: 8px;
+}
+
+#main span {
+    color: blue;
+}
+
+#main a {
+    color: lightblue;
+}
+
+#footer {
+    background: grey;
+    color: lightgrey;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#footer a {
+    color: lightblue;
+}
