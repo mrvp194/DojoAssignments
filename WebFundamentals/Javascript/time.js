@@ -5,6 +5,7 @@ function tellTime(hour, minute, period){
         string = "just after"
     }else if(minute > 30) {
         string = "almost"
+        hour++
     }else {
         string = "half past"
     }
