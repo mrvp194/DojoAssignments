@@ -1,0 +1,12 @@
+th {
+    margin-left: 20px;
+    display: inline-block;
+}
+td {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+input {
+    display: block;
+}
