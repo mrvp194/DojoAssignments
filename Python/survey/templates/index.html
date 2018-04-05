@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <form action="/results" method="post">
+            Name: <input type="text" name="name">
+            Dojo location: <select name='location'>
+                <option value='chicago'>Chicago</option>
+                <option value='san francisco'>San Francisco</option>
+                <option value="New York">New York</option>
+            </select>
+            Fav Language: <select name='language'>
+                    <option value='python'>Python</option>
+                    <option value='ruby'>Ruby</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+                Comment (optional):<textarea name="comment"></textarea>
+            <input type="submit" value="Button">
+        </form>
+    </body>
+</html>
