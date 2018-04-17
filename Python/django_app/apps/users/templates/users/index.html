@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Users</title>
+	</head>
+	<body>
+		<h1>Users</h1>
+		<table>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <th>{{user.id}}</th>
+                <th>{{user.name}}</th>
+                <th>{{user.email}}</th>
+                <th>{{user.created_atb}}</th>
+                <th><a href="{% url 'show' user.id %}">Show</a><a href="{% url 'edit' user.id %}">Edit</a><a href="{% url 'destroy' user.id %}">Delete</a>  </th>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{% url 'new' %}">Add a User</a>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Users</title>
+	</head>
+	<body>
+        <form action="/users/create" method="POST">
+            {% csrf_token %}
+            Full Name: <input type="text" name="name">
+            Email: <input type="text" name="email">
+            <input type="submit" value="Create">
+        </form>
+        <a href="{% url 'index' %}">Go Back</a>
+    </body>
+</html>
